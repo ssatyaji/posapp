@@ -48,7 +48,5 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
+  adapter: postgresql
   database: posapp_production
-  username: posapp
-  password: <%= ENV['POSAPP_DATABASE_PASSWORD'] %>
